@@ -6,9 +6,7 @@ import styles from './Style/RowStyles.js'
 
 
   export default class Row extends Component {
-	_onPressButton(){
-		console.log('pressed')
-	}
+
 
 	render(){
 		const {data} = this.props;
