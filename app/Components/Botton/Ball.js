@@ -10,16 +10,17 @@ import styles from './BallStyles.js'
     constructor(props) {
            super(props);
             this.state = {
-                animate : false
+                animate : true
            }
     }
 
 
   triggerAnimation(){
     this.setState((prevState, props) => {
+        this.props.handleAnimation(this.state.animate)
       return {animate: !prevState.animate};
     });
-    this.props.handleAnimation(this.state.animate)
+
   }
 
 
